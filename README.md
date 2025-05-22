@@ -478,9 +478,9 @@ I worked on a digital weighing scale project that measures the weight of objects
 
 Code for BlinkLed using register:
 ```c
-GPIOC->BSRR = (1 << 13);        // Set bit 13 → LED OFF
+GPIOC->ODR &= ~(1 << 13);  // Ghi 0 vào bit 13 → LED ON
 delay_ms(500);
-GPIOC->BSRR = (1 << (13 + 16)); // Reset bit 13 → LED ON
+GPIOC->ODR |=  (1 << 13);  // Ghi 1 vào bit 13 → LED OFF
 delay_ms(500);
 ```
 > ODR: Output Data Register
