@@ -1,23 +1,23 @@
 # Basic SW technical terms
-**Embedded System:**	A computer system built into a device to perform specific tasks (e.g., washing machine, smartwatch)
-**Microcontroller (MCU):**	A compact integrated chip with CPU, RAM, Flash memory, and peripherals to control hardware devices
-**GPIO (General Purpose Input/Output):** Pins on the microcontroller used for digital input (e.g., button) or output (e.g., LED)
-**Regiser:** A small memory location inside the MCU used to control or monitor hardware features
-**Interrupt:**	A signal that temporarily pauses the main program to handle important events (e.g., a timer interrupt)
-**ISR (Interrupt Service Routine):** A special function that runs when an interrupt occurs
-**Timer / Counter:** Hardware used for measuring time, generating delays, or creating periodic events
-**PWM (Pulse Width Modulation):** A technique for simulating analog signals using digital pulses (e.g., dimming an LED, controlling motor speed)
-**ADC (Analog to Digital Converter):**	Converts analog signals (like voltage from a sensor) into digital values
-**UART / USART:** Serial communication protocols used to send and receive data between the MCU and other devices (like a PC)
-**I2C/SPI:** High-speed communication protocols used for connecting multiple chips on the same board (e.g., sensors, displays)
-**Flash Memory:** Non-volatile memory where the program (firmware) is stored
-**RAM (Random Access Memory):** Temporary memory used for variables and data during program execution
-**Bootloader:** A small program that helps load the main firmware into the microcontroller from a computer or other device
-**Firmware:** Software programmed into the microcontroller that directly controls hardware
-**Bare-metal Programming:** Writing code directly on the hardware without using an operating system
-**RTOS (Real-Time Operating System):** A lightweight operating system that manages multiple tasks with strict timing requirements
-**Bit-masking / Bit-banding:** Techniques used to manipulate individual bits in registers for efficient hardware control
-**Memory Map:** A layout showing how memory (Flash, RAM, registers) is organized inside the MCU
+* **Embedded System:**	A computer system built into a device to perform specific tasks (e.g., washing machine, smartwatch)
+* **Microcontroller (MCU):**	A compact integrated chip with CPU, RAM, Flash memory, and peripherals to control hardware devices
+* **GPIO (General Purpose Input/Output):** Pins on the microcontroller used for digital input (e.g., button) or output (e.g., LED)
+* **Regiser:** A small memory location inside the MCU used to control or monitor hardware features
+* **Interrupt:**	A signal that temporarily pauses the main program to handle important events (e.g., a timer interrupt)
+* **ISR (Interrupt Service Routine):** A special function that runs when an interrupt occurs
+* **Timer / Counter:** Hardware used for measuring time, generating delays, or creating periodic events
+* **PWM (Pulse Width Modulation):** A technique for simulating analog signals using digital pulses (e.g., dimming an LED, controlling motor speed)
+* **ADC (Analog to Digital Converter):**	Converts analog signals (like voltage from a sensor) into digital values
+* **UART / USART:** Serial communication protocols used to send and receive data between the MCU and other devices (like a PC)
+* **I2C/SPI:** High-speed communication protocols used for connecting multiple chips on the same board (e.g., sensors, displays)
+* **Flash Memory:** Non-volatile memory where the program (firmware) is stored
+* **RAM (Random Access Memory):** Temporary memory used for variables and data during program execution
+* **Bootloader:** A small program that helps load the main firmware into the microcontroller from a computer or other device
+* **Firmware:** Software programmed into the microcontroller that directly controls hardware
+* **Bare-metal Programming:** Writing code directly on the hardware without using an operating system
+* **RTOS (Real-Time Operating System):** A lightweight operating system that manages multiple tasks with strict timing requirements
+* **Bit-masking / Bit-banding:** Techniques used to manipulate individual bits in registers for efficient hardware control
+* **Memory Map:** A layout showing how memory (Flash, RAM, registers) is organized inside the MCU
 
 # Basic mathematics
 `+ - * / %`
