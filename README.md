@@ -473,5 +473,14 @@ d.f = 220.5;  // overwrites previous value of i
 ```
 ## Essay writing
 **Describe a project you did**
+
 I worked on a digital weighing scale project that measures the weight of objects and displays the result on an LCD screen. Additionally, the weight data is transmitted to a laptop via UART communication for further processing and monitoring. The system integrates a load cell sensor for accurate weight measurement, a microcontroller that called STM32F103C8T6 to process the signals, and UART protocol to enable real-time data transfer to the computer. This project demonstrates the practical application of embedded systems in data acquisition and user interface design
 
+Code for BlinkLed using register:
+```c
+GPIOC->BSRR = (1 << 13);        // Set bit 13 → LED OFF
+delay_ms(500);
+GPIOC->BSRR = (1 << (13 + 16)); // Reset bit 13 → LED ON
+delay_ms(500);
+```
+> ODR: Output Data Register
