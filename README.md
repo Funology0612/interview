@@ -18,6 +18,7 @@
 * **RTOS (Real-Time Operating System):** A lightweight operating system that manages multiple tasks with strict timing requirements
 * **Bit-masking / Bit-banding:** Techniques used to manipulate individual bits in registers for efficient hardware control
 * **Memory Map:** A layout showing how memory (Flash, RAM, registers) is organized inside the MCU
+* **SoC (System on Chip):** an integrated circuit that combines all the major components of a computer or embedded system into a single chip
 
 # Basic mathematics
 `+ - * / %`
