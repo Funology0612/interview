@@ -133,18 +133,43 @@ int r2 = 10 % 3;  // r2 = 1
 ```c
 #include <stdio.h>
 
-void decimalToBinary(int n) {
-    if (n > 1)
-        decimalToBinary(n / 2);
+#include <stdio.h>
 
-    printf("%d", n % 2);
+void decimalToBinary(int n) {
+    int binary[32]; // Mảng lưu các bit nhị phân (tối đa 32 bit cho int)
+    int i = 0;
+
+    // Trường hợp đặc biệt: nếu n == 0
+    if (n == 0) {
+        printf("0");
+        return;
+    }
+
+    // Chia liên tiếp cho 2 và lưu phần dư
+    while (n > 0) {
+        binary[i] = n % 2;
+        n = n / 2;
+        i++;
+    }
+
+    // In kết quả nhị phân từ cuối mảng về đầu
+    for (int j = i - 1; j >= 0; j--) {
+        printf("%d", binary[j]);
+    }
 }
 
 int main() {
-    int decimal = 13;
-    printf("Binary of %d is: ", decimal);
-    decimalToBinary(decimal);
+    int number;
+
+    printf("Enter a decimal number: ");
+    scanf("%d", &number);
+
+    printf("Binary: ");
+    decimalToBinary(number);
+
     return 0;
+}
+
 }
 ```
 
